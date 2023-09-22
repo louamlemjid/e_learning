@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LouamAcademie</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="image/icon/favicon.ico">
+    <script type="text/javascript" src="index.js"></script>
+    <!--script defer src="https://py-script.net/alpha/py-script.js"></script-->
+</head>
+<body>
+    <style>
+        @media (max-width:515px){
+            nav>a,.cours-nav a,#selected{
+                font-size: 10px;
+                margin: 0; 
+                display: flex;
+                
+            }
+            .recherche,form{
+                width: 90%;
+            }
+            #bienvenue,#intro-img,#ali,#intro,footer{
+                width: 95%;
+            }
+            #inro-img{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 2fr 1fr;
+            }
+            #intro-img>div,#intro-img>h2{
+                grid-column: span 2;
+            }
+            #study,#hstudy{
+                width: 31%;
+                margin: 0;
+                padding: 45%;
+            }
+        }
+    </style>
+    <header>
+        <img src="image/aaa.svg" width="40"  alt="my website logo" class="logo" >
+        <nav >
+            
+            <a href="index.html" id="selected">Home</a>
+            <a href="cours.html">Cours</a>
+            <a href="https://www.youtube.com/watch?v=SlX_j8lkaNI&list=PL9vepVEZZ9AHqkiza9d2cW_yqzbK-S7rP&ab_channel=LouamAcademie">Youtube_playlist</a>
+            <a href="signup.html">Signup</a>
+            <a href="signin.html">Signin</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        
+    </header>
+    
+
+    <h1>Acceuil</h1>
+    <div class="recherche">
+        <form>
+            <label for="search">Rechercher des cours</label>
+            <br><br>
+            <input type="search" placeholder="search" id="search" >
+            <br><br>
+            <button id="button">Rechercher</button>
+            
+        
+            <img id="bcatc" width="20%" src="image/bcatc.gif">
+        
+        </form>
+        
+    </div>
+    
+    <br>
+    <script src="index.js"></script>
+    <section id="bienvenue" >
+        <h2 style="font-size: 45px; ">Bienvenue à LouamAcademie</h2>
+        <video controls width="500px" class="video">
+            <source src="video/intro.mp4" >
+        </video>
+        <p>Bienvenue sur notre site d'éducation, votre source d'apprentissage en ligne ultime ! <br>
+            Explorez notre vaste collection de cours interactifs, enrichissants et adaptés à tous les niveaux.
+            <br> Développez vos compétences, élargissez vos connaissances et préparez-vous à un avenir brillant
+            <br> grâce à notre plateforme d'apprentissage intuitive. Rejoignez-nous dès maintenant et commencez votre voyage vers l'excellence éducative !</p>
+        <p><a href="signup.html" class="memb" >Devenir un membre </a></p>
+        <p><a href="signin.html" class="inscri">S'identifier</a></p>
+        
+    </section>
+    <br>
+    <div id="intro-img">
+        <h2>Aprendre à programmer facilement avec LouamAcademie</h2>
+        <img src="./image/study.png" id="study" >
+        <img src="./image/bluecat.gif" id="hstudy" >
+        <p>Le premier pas en coding est le plus difficile, mais avec ce platforme on vous guide à depasser cette lacune.</p>
+        
+    </div>    
+    <br>
+
+    <!--<div class="connection">
+        <form>
+            <p>S'identifier</p>
+            <label for="email">Nom d'utilisateur</label>
+            <br><br>
+            <input type="email" placeholder="email" id="email" required>
+            <br><br>
+            <label for="password">Mot de passe</label>
+            <br><br>
+            <input type="password" placeholder="password" id="password" required>
+            <br><br>
+            <button id="button">connecter</button>
+        </form>
+    </div>-->
+    
+    
+    <br>
+    
+    <div id="ali">
+        <img src="image/ali.jpg" width="250" style="border-radius: 20px;">
+        <div>
+            <p>"Even the greatest was once a beginner. Don't be afraid to take that first step."</p>
+            <h3>~ Muhammad Ali</h3>
+        </div>
+    </div>
+    <br>
+    
+    <div id="intro">
+        <h2>Introduction à la programmation</h2>
+        <video controls  class="video">
+            <source src="video/introduction.mp4">
+        </video>
+        <p><a href="https://www.youtube.com/watch?v=SlX_j8lkaNI&list=PL9vepVEZZ9AHqkiza9d2cW_yqzbK-S7rP&ab_channel=LouamAcademie">Youtube/link</a></p>
+    </div>
+    
+    <footer>
+        <p>copyright licence number ****** </p>
+    </footer>
+</body>
+</html>

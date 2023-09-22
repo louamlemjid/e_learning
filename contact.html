@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="image/icon/favicon.ico">
+    
+</head>
+<body>
+    <style>
+        @media (max-width:515px){
+            nav>a,.cours-nav a,#selected{
+                font-size: 10px;
+                margin: 0; 
+                display: flex;
+                
+            }
+        }
+    </style>
+    <header>
+        <img src="image/logo.png" width="100" style="margin: 0;" alt="my website logo" class="logo">
+        <nav>
+            
+            <a href="index.html" >Home</a>
+            <a href="cours.html">Cours</a>
+            <a href="https://www.youtube.com/watch?v=SlX_j8lkaNI&list=PL9vepVEZZ9AHqkiza9d2cW_yqzbK-S7rP&ab_channel=LouamAcademie">Youtube_playlist</a>
+            <a href="signup.html">Signup</a>
+            <a href="signin.html">Signin</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html" id="selected">Contact</a>
+        </nav>
+    </header>
+    <h1>Contact</h1>
+    <div class="contact">
+        <form action="process-form.php" method="POST">
+            <label for="name">Name:</label><br><br>
+            <input type="text" id="name" name="name" required><br><br>
+        
+            <label for="email">Email:</label><br><br>
+            <input type="email" id="email" name="email" required><br><br>
+        
+            <label for="message">Message:</label><br><br>
+            <textarea id="message" name="message" required></textarea><br><br>
+        
+            <button type="submit" id="button" >Submit</button>
+            <br>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="image/icon/favicon.ico">
+    <title>calculatrice</title>
+</head>
+<body>
+    <style>
+        @media (max-width:515px){
+            nav>a,.cours-nav a,#selected{
+                font-size: 10px;
+                margin: 0; 
+                display: flex;
+                
+            }
+        }
+        
+    </style>
+    <header>
+        <img src="image/logo.png" width="100" style="margin: 0;" alt="my website logo" class="logo">
+        <nav>
+            
+            <a href="index.html" >Home</a>
+            <a href="cours.html">Cours</a>
+            <a href="https://www.youtube.com/watch?v=SlX_j8lkaNI&list=PL9vepVEZZ9AHqkiza9d2cW_yqzbK-S7rP&ab_channel=LouamAcademie">Youtube_playlist</a>
+            <a href="signup.html">Signup</a>
+            <a href="signin.html">Signin</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html" id="selected">Contact</a>
+        </nav>
+    </header>
+    <h1>Calculatrice</h1>
+    <header>
+        <nav class="cours-nav" >
+            <ul>
+                <li ><a>Python</a>
+                    <ul class="menu">
+                        <li ><a>introduction</a></li>
+                        <li ><a>cours python</a></li>
+                        <li ><a>TDs</a></li>
+                        <li ><a>Concours</a></li>
+                    </ul>
+                </li>
+                
+                <li ><a>Base de données</a>
+                    <ul class="menu">
+                        <li ><a>introduction</a></li>
+                        <li ><a>Algebre relationnel</a></li>
+                        <li ><a>SQL</a></li>
+                        <li ><a>Sqlite3</a></li>
+                        <li ><a>TDs</a></li>
+                        <li ><a>Concours</a></li>
+                    </ul>
+                </li>
+                <li><a>Oop</a>
+                    <ul class="menu">
+                        <li ><a>introduction</a></li>
+                        <li ><a>cours oop</a></li>
+                        <li ><a>TDs</a></li>
+                        <li ><a>Concours</a></li>
+                    </ul>
+                </li>
+                <li><a href="pomodoro.html">Pomodoro</a></li>
+                <li><a href="calculatrice.html">Calculatrice</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="cal">
+        <h2 id="disn">0</h2>
+        <h4 onclick="formnumber(7)">7</h4>
+        <h4 onclick="formnumber(8)">8</h4>
+        <h4 onclick="formnumber(9)">9</h4>
+        <h4 onclick="formnumber(4)">4</h4>
+        <h4 onclick="formnumber(5)">5</h4>
+        <h4 onclick="formnumber(6)">6</h4>
+        <h4 onclick="formnumber(1)">1</h4>
+        <h4 onclick="formnumber(2)">2</h4>
+        <h4 onclick="formnumber(3)">3</h4>
+        <h4 onclick="formnumber('.')">.</h4>
+        <h4 onclick="formnumber(0)" style="grid-column: 1/3;grid-row: 5/6;">0</h4>
+        <h4 style="grid-row: 2/3;grid-column: 4/5;background-color: rgb(255, 187, 0);" class="op" onclick="opdiv()" >/</h4>
+        <h4 style="grid-row: 3/4;grid-column: 4/5;background-color: rgb(255, 187, 0);" class="op" onclick="opmul()">x</h4>
+        <h4 style="grid-row: 4/5;grid-column: 4/5;background-color: rgb(255, 187, 0);" class="op" onclick="opsub()">-</h4>
+        <h4 style="grid-row: 5/6;grid-column: 4/5;background-color: rgb(255, 187, 0);" class="op" onclick="opsum()">+</h4>
+        <h4 id="equal" style="grid-row: 6/7;grid-column: 1/5;background-color: rgb(13, 255, 0)" class="op">=</h4>
+
+
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="image/icon/favicon.ico">
+    <title>TDs</title>
+</head>
+<body>
+    <style>
+        @media (max-width:515px){
+            nav>a,.cours-nav a,#selected{
+                font-size: 10px;
+                margin: 0; 
+                display: flex;
+                
+            }
+            .apprend{
+                width: 100%;
+                left: 0;
+                display: flex;
+                flex-direction: column;
+            }
+            .apprend > .vid{
+                width: 80%;
+            }
+            .apprend >.lis{
+                width: 80%;
+            }
+        }
+    </style>
+    <header>
+        <img src="image/aaa.svg" width="40"  alt="my website logo" class="logo">
+        <nav >
+            
+            <a href="index.html" >Home</a>
+            <a href="cours.html" id="selected">Cours</a>
+            <a href="https://www.youtube.com/watch?v=SlX_j8lkaNI&list=PL9vepVEZZ9AHqkiza9d2cW_yqzbK-S7rP&ab_channel=LouamAcademie">Youtube_playlist</a>
+            <a href="signup.html">Signup</a>
+            <a href="signin.html">Signin</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <h1>Introduction au Python</h1>
+    <header>
+        <nav class="cours-nav">
+            <ul>
+                <li ><a>Python</a>
+                    <ul class="menu">
+                        <li ><a>introduction</a></li>
+                        <li ><a>cours python</a></li>
+                        <li ><a>TDs</a></li>
+                        <li ><a>Concours</a></li>
+                    </ul>
+                </li>
+                
+                <li ><a>Base de données</a>
+                    <ul class="menu">
+                        <li ><a>introduction</a></li>
+                        <li ><a>Algebre relationnel</a></li>
+                        <li ><a>SQL</a></li>
+                        <li ><a>Sqlite3</a></li>
+                    </ul>
+                </li>
+                <li><a>Oop</a>
+                    <ul class="menu">
+                        <li ><a>introduction</a></li>
+                        <li ><a>classes</a></li>
+                        <li ><a>methodes</a></li>
+                        <li ><a>attribues</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="apprend">
+        <div class="vid"><video src="./video/introduction.mp4" class="video" controls></video></div>
+        <div class="lis">
+            <h4 onclick="scrol('./video/partie1indice.mp4')">indice1</h4>
+            <h4 onclick="scrol('./video/partie2indice.mp4')">indice2</h4>
+            <h4 onclick="scrol('./video/bouclefor.mp4')">boucle for</h4>
+            <h4>1</h4>  
+            <h4>1</h4>
+            <h4>1</h4>
+            <h4>1</h4>
+            <h4>1</h4>  
+            <h4>1</h4>
+            <h4>1</h4>
+            <h4>1</h4>
+            <h4>1</h4>  
+        </div>
+    </div>
+    <script src="./python-intro.js" type="text/javascript"></script>
+</body>
+</html>

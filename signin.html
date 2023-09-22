@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="image/icon/favicon.ico">
+</head>
+<body>
+    <style>
+        @media (max-width:515px){
+            nav>a,.cours-nav a,#selected{
+                font-size: 10px;
+                margin: 0; 
+                display: flex;
+                
+            }
+            .connection,form{
+                width: 85%;
+            }
+            #cat{
+                width: 30%;
+            }
+        }
+    </style>
+    <header>
+        <img src="image/logo.png" width="100" style="margin: 0;" alt="my website logo" class="logo">
+        <nav>
+            
+            <a href="index.html" >Home</a>
+            <a href="cours.html">Cours</a>
+            <a href="https://www.youtube.com/watch?v=SlX_j8lkaNI&list=PL9vepVEZZ9AHqkiza9d2cW_yqzbK-S7rP&ab_channel=LouamAcademie">Youtube_playlist</a>
+            <a href="signup.html">Signup</a>
+            <a href="signin.html" id="selected">Signin</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <h1>Signin</h1>
+    <div class="connection">
+        <form>
+            <p>S'identifier</p>
+            <label for="email">Nom d'utilisateur</label>
+            <br><br>
+            <input type="email" placeholder="email" id="email" required>
+            <br><br>
+            <label for="pass">Mot de passe</label>
+            <br><br>
+            <input type="password" placeholder="password" id="pass" required>
+            <br><br>
+            <button id="button">connecter</button>
+        </form>
+    </div>
+    
+    <img src="image/cat.png" id="cat">
+</body>
+</html>

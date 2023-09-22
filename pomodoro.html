@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="image/icon/favicon.ico">
+    
+    <title>Pomodoro</title>
+</head>
+<body>
+    <style>
+        @media (max-width:515px){
+            nav>a,.cours-nav a,#selected{
+                font-size: 10px;
+                margin: 0; 
+                display: flex;
+                
+            }
+        }
+    </style>
+    <header>
+        <img src="image/aaa.svg" width="40"  alt="my website logo" class="logo">
+        <nav>
+            
+            <a href="index.html" >Home</a>
+            <a href="cours.html">Cours</a>
+            <a href="https://www.youtube.com/watch?v=SlX_j8lkaNI&list=PL9vepVEZZ9AHqkiza9d2cW_yqzbK-S7rP&ab_channel=LouamAcademie">Youtube_playlist</a>
+            <a href="signup.html">Signup</a>
+            <a href="signin.html">Signin</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html" id="selected">Contact</a>
+        </nav>
+    </header>
+    <h1>Methode de POMODORO</h1>
+    <header>
+        <nav class="cours-nav">
+            <ul>
+                <li ><a>Python</a>
+                    <ul class="menu">
+                        <li ><a>introduction</a></li>
+                        <li ><a>cours python</a></li>
+                        <li ><a>TDs</a></li>
+                        <li ><a>Concours</a></li>
+                    </ul>
+                </li>
+                
+                <li ><a>Base de données</a>
+                    <ul class="menu">
+                        <li ><a>introduction</a></li>
+                        <li ><a>Algebre relationnel</a></li>
+                        <li ><a>SQL</a></li>
+                        <li ><a>Sqlite3</a></li>
+                        <li ><a>TDs</a></li>
+                        <li ><a>Concours</a></li>
+                    </ul>
+                </li>
+                <li><a>Oop</a>
+                    <ul class="menu">
+                        <li ><a>introduction</a></li>
+                        <li ><a>cours oop</a></li>
+                        <li ><a>TDs</a></li>
+                        <li ><a>Concours</a></li>
+                    </ul>
+                </li>
+                <li><a href="pomodoro.html">Pomodoro</a></li>
+                <li><a href="calculatrice.html">Calculatrice</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <div class="pomo">
+        <div style="grid-column: 1/4;grid-row: 1;" class="diso"></div>
+        <label style="grid-column: 1/4;grid-row: 3;">#Temps</label>
+        <h4 style="grid-column: 1;" class="#5"> 5 mn</h4>
+        <h4 style="grid-column: 2;" class="#15" >15 mn</h4>
+        <h4 style="grid-column: 3;" class="#25" >25 mn</h4>
+        <label style="grid-column: 1/4;grid-row: 5;">#Taches</label>
+        <h4 style="grid-column: 1/2;grid-row: 6/7;" >#1</h4>
+        <h5 style="grid-column: 1/2;grid-row: 7/8;" id="#1">0</h5>
+        <h4 style="grid-column: 2/3;grid-row: 6/7;" >#2</h4>
+        <h5 style="grid-column: 2/3;grid-row: 7/8;" id="#2">0</h5>
+        <h4 style="grid-column: 3/4;grid-row: 6/7;" >#3</h4>
+        <h5 style="grid-column: 3/4;grid-row: 7/8;" id="#3">0</h5>
+        <input style="grid-column: 1/4;" type="text" placeholder="Ecrire Tache">
+    </div>
+
+        
+    
+    <script type="text/javascript" src="js/pomodoro.js"></script>
+</body>
+</html>

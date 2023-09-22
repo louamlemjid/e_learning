@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="icon" type="image/x-icon" href="image/icon/favicon.ico">
+</head>
+<body>
+    <style>
+        @media (max-width:615px){
+            nav>a,.cours-nav a,#selected{
+                font-size: 10px;
+                margin: 0; 
+                display: flex;
+                
+            }
+            .connection,#louamacademie{
+                width: 85%;
+            }   
+            #logo{
+                width: 100px;
+            }
+        }
+    </style>
+    <header>
+        <img src="image/logo.png" width="100" style="margin: 0;" alt="my website logo" class="logo">
+        <nav>
+            
+            <a href="index.html" >Home</a>
+            <a href="cours.html">Cours</a>
+            <a href="https://www.youtube.com/watch?v=SlX_j8lkaNI&list=PL9vepVEZZ9AHqkiza9d2cW_yqzbK-S7rP&ab_channel=LouamAcademie">Youtube_playlist</a>
+            <a href="signup.html" id="selected">Signup</a>
+            <a href="signin.html">Signin</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <h1>Signup</h1>
+    <div id="louamacademie">
+        <img src="image/lo.jpg" id="logo" width="10%">
+        <p>Join our comunity and explore another realm by expanding your knowledge</p>
+        
+    </div>
+    <br>
+    <div class="connection">
+        <label>S'inscrire</label><br>
+        <img src="image/bcate.gif" id="bcate" width="150px" >
+        <br>
+        <!-- nom et prenom-->
+        <label for="nom">Nom</label>
+        <br><br>
+        <input type="text" id="nom" required>
+        <br><br>
+        <label for="prenom">Prenom</label>
+        <br><br>
+        <input type="text" id="prenom" required>
+        <br><br>    
+        <!-- niveau-->
+        <form>
+            <label>Niveau d'étude : </label>
+            <br><br>
+            <label>
+              <input type="radio" name="options" style="width: 20%;"value="Option 1"> 2ème informatique
+            </label>
+            <br>
+            <label>
+              <input type="radio" name="options" style="width: 20%;"value="Option 2"> 2ème science
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="options" style="width: 20%;"value="Option 3"> 2ème eco
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="options" style="width: 20%;"value="Option 1"> 3ème informatique
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="options" style="width: 20%;"value="Option 1"> 3ème technique
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="options" style="width: 20%;"value="Option 2"> 3ème science experimetale
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="options" style="width: 20%;"value="Option 2"> 3ème math
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="options" style="width: 20%;"value="Option 2"> Bac science experimetale
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="options" style="width: 20%;"value="Option 2"> Bac informatique
+            </label>
+            <br><label>
+                <input type="radio" name="options" style="width: 20%;"value="Option 2"> Bac math
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="options" style="width: 20%;"value="Option 2"> Bac eco
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="options" style="width: 20%;"value="Option 1"> Bac technique
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="options" style="width: 20%;"value="Option 2"> 1ère prepa
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="options" style="width: 20%;"value="Option 2"> 2ème prepa
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="options" style="width: 20%;"value="Option 2"> Autre.
+            </label>
+            
+        </form>
+        <br>
+        <!-- email-->
+        <label for="email">Email</label>
+        <br><br>
+        <input type="email" id="email" required>
+        <br><br>
+
+        <!-- num tel-->
+        <label for="tel">Numero de telphonne</label>
+        <br><br>
+        <input type="tel" id="tel" required>
+        <br><br>
+
+        <!-- sexe-->
+        <fieldset data-role="controlgroup">
+            <legend>Sexe</legend>
+              <label for="male">Masculin</label>
+              <input type="radio" name="gender"style="width: 20%;" id="male" value="male" checked required>
+              <label for="female">Feminine  </label>
+              <input type="radio" name="gender" style="width: 20%;"id="female" value="female" required>
+        </fieldset>
+        <br><br>
+
+        <!-- date de naissance-->
+        <label for="birthday">Date de naissance</label>
+        <br><br>
+        <input type="date" id="birthday" required>
+        <br><br>
+
+        <!--  mot de passe-->
+        <label for="pass1">Mot de passe</label>
+        <br><br>
+        <input type="password"  id="pass1" required>
+        <br><br>
+
+        <!-- retapper mot de passe-->
+        <label for="pass2">Re-mot de passe</label>
+        <br><br>
+        <input type="password" id="pass2" required>
+        <br><br>
+
+        <!-- photo de profil-->
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <label for="profile-pic">choisir une photo de profil</label>
+            <input type="file" id="profile-pic" name="profile-pic" accept="image/*">
+            <input type="submit" id="upload" value="Upload">
+        </form>
+        <br><br>
+
+        <!-- terms of use-->
+        
+            <input type="checkbox" name="checkbox1" style="width: 20%;" id="terms" value="option1" required><label for="terms"> J'accepte les <a href="termes-d-utilisation.html" style="font-size: medium;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: #5762D5;">termes d'utilisation</a></label>
+        
+        <br><br>
+        <!-- submit button-->
+        <button type="submit" id="button" >S'inscrire</button>
+
+    </div>
+    <script type="text/javascript" src="signup.js"></script>
+    </body>
+</html>
