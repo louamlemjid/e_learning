@@ -1,0 +1,63 @@
+
+main{
+    margin: auto;
+    text-align: center;
+    width: 70%;
+    background-color: rgba(255, 42, 0, 0.64);
+    border-radius: 20px;
+    height: auto;
+    color: rgb(227, 248, 255);
+}
+.note{
+    background-color: rgb(255, 255, 255);
+    
+    width: 100%;
+    font-family: monospace;
+    text-align: start;
+    display: grid;
+    gap: 20px ;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+}
+.note h2,p,h5{
+    
+    padding-inline-start: 8px;
+
+}
+.main-note{
+    grid-column: 2/6;
+    grid-row: 2;
+    
+    
+}
+.side-note{
+    grid-column: 1;
+    border-right: solid 10px rgb(255, 255, 255);
+    grid-row: 1;
+    background-color: white;
+    
+    height: 145%;
+}
+.button{
+    grid-column: 3/5;
+    grid-row-start: auto;
+    margin: auto;
+
+    
+}
+.button button:hover{
+    background-color: rgb(13, 230, 125);
+    cursor: pointer;
+}
+.note button{
+    background-color: rgb(0, 255, 149);
+    border: solid 1px white;
+    font-weight: bolder;
+    width: 200px;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    color: white;
+    border-radius: 7px;
+    
+}
